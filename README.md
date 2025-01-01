@@ -111,5 +111,3 @@ Here’s a quick cheat sheet of some commands:
 ## Challenges
 
 The most difficult aspect of building this interpreter was handling **nested control flow** and **function scoping**. Ensuring that each `IfThen`, `Begin`, or `Fun` had a matching `End` (and properly capturing the environment for user-defined functions) required careful bookkeeping in both the code for parsing commands and the code that executes those commands. Overcoming this involved implementing helper functions to slice input strings, track current scope depths, and maintain multiple environment frames for nested blocks and function calls. Through thorough testing and step-by-step debugging, these features were integrated successfully.
-```
-
